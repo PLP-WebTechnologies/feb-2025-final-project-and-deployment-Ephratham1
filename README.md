@@ -80,7 +80,7 @@ Contributions are welcome. If you'd like to contribute:
 
 For queries or feedback:  
 **Project Author:** Ephratham1  
-**Email:** _[add your contact info if desired]_
+**Email:** siphosimango@aol.com
 
 ---
 
