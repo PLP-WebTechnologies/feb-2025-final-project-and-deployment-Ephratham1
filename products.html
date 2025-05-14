@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Kasi-Empire Butchery</title>
+    <meta name="description" content="Browse our selection of premium meat products" />
+    <meta name="author" content="Kasi-Empire" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Kasi-Empire</h1>
+          <p>Premium Butchery</p>
+        </div>
+        <nav>
+          <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-banner">
+      <div class="container">
+        <h2>Our Products</h2>
+      </div>
+    </section>
+
+    <section class="product-categories">
+      <div class="container">
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="all">All Products</button>
+          <button class="category-tab" data-category="beef">Beef</button>
+          <button class="category-tab" data-category="lamb">Lamb</button>
+          <button class="category-tab" data-category="chicken">Chicken</button>
+          <button class="category-tab" data-category="pork">Pork</button>
+          <button class="category-tab" data-category="specialty">Specialty</button>
+        </div>
+
+        <div class="products-grid" id="products-container">
+          <!-- Beef Products -->
+          <div class="product-card fade-in" data-category="beef">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1603048297172-2cd882e1b6ec?auto=format&fit=crop&w=500&h=500" alt="Ribeye Steak">
+            </div>
+            <h3>Ribeye Steak</h3>
+            <p>Premium cut with excellent marbling</p>
+            <p class="price">R189.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <div class="product-card fade-in" data-category="beef">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?auto=format&fit=crop&w=500&h=500" alt="Sirloin Steak">
+            </div>
+            <h3>Sirloin Steak</h3>
+            <p>Lean and flavorful cut</p>
+            <p class="price">R169.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <div class="product-card fade-in" data-category="beef">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=500&h=500" alt="Beef Fillet">
+            </div>
+            <h3>Beef Fillet</h3>
+            <p>Tender and elegant</p>
+            <p class="price">R229.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <div class="product-card fade-in" data-category="beef">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1602470520998-f4a52199a3d6?auto=format&fit=crop&w=500&h=500" alt="Beef Brisket">
+            </div>
+            <h3>Beef Brisket</h3>
+            <p>Perfect for slow cooking</p>
+            <p class="price">R139.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <!-- Lamb Products -->
+          <div class="product-card fade-in" data-category="lamb">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=500&h=500" alt="Lamb Chops">
+            </div>
+            <h3>Lamb Chops</h3>
+            <p>Tender and flavorful</p>
+            <p class="price">R189.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <div class="product-card fade-in" data-category="lamb">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1629406822976-1f207a1c59f5?auto=format&fit=crop&w=500&h=500" alt="Leg of Lamb">
+            </div>
+            <h3>Leg of Lamb</h3>
+            <p>Great for special occasions</p>
+            <p class="price">R169.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <!-- Chicken Products -->
+          <div class="product-card fade-in" data-category="chicken">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=500&h=500" alt="Chicken Breasts">
+            </div>
+            <h3>Chicken Breasts</h3>
+            <p>Skinless and boneless</p>
+            <p class="price">R89.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <div class="product-card fade-in" data-category="chicken">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=500&h=500" alt="Whole Chicken">
+            </div>
+            <h3>Whole Chicken</h3>
+            <p>Free range</p>
+            <p class="price">R79.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <!-- Pork Products -->
+          <div class="product-card fade-in" data-category="pork">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=500&h=500" alt="Pork Chops">
+            </div>
+            <h3>Pork Chops</h3>
+            <p>Thick cut and juicy</p>
+            <p class="price">R119.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <div class="product-card fade-in" data-category="pork">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1628268909376-e8c44bb3153f?auto=format&fit=crop&w=500&h=500" alt="Pork Belly">
+            </div>
+            <h3>Pork Belly</h3>
+            <p>Rich and flavorful</p>
+            <p class="price">R129.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <!-- Specialty Products -->
+          <div class="product-card fade-in" data-category="specialty">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?auto=format&fit=crop&w=500&h=500" alt="Beef Biltong">
+            </div>
+            <h3>Beef Biltong</h3>
+            <p>Traditional South African dried meat</p>
+            <p class="price">R249.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+          
+          <div class="product-card fade-in" data-category="specialty">
+            <div class="product-img">
+              <img src="https://images.unsplash.com/photo-1624178376196-84e38627fc28?auto=format&fit=crop&w=500&h=500" alt="Boerewors">
+            </div>
+            <h3>Boerewors</h3>
+            <p>Traditional South African sausage</p>
+            <p class="price">R139.99/kg</p>
+            <button class="btn-add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart-section">
+      <div class="container">
+        <div class="cart-container">
+          <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+          <div id="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+          </div>
+          <div class="cart-total">
+            <h3>Total: R<span id="cart-total">0.00</span></h3>
+            <button class="btn-checkout">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Kasi-Empire Butchery</h3>
+            <p>Providing premium quality meat since 2010.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Main Road, Soweto</p>
+            <p><i class="fas fa-phone"></i> (011) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@kasi-empire.co.za</p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Kasi-Empire Butchery. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

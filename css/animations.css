@@ -1,0 +1,229 @@
+
+/* Animations CSS File */
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger children animations */
+.products-grid .product-card:nth-child(1) { animation-delay: 0.1s; }
+.products-grid .product-card:nth-child(2) { animation-delay: 0.2s; }
+.products-grid .product-card:nth-child(3) { animation-delay: 0.3s; }
+.products-grid .product-card:nth-child(4) { animation-delay: 0.4s; }
+.products-grid .product-card:nth-child(5) { animation-delay: 0.5s; }
+.products-grid .product-card:nth-child(6) { animation-delay: 0.6s; }
+.products-grid .product-card:nth-child(7) { animation-delay: 0.7s; }
+.products-grid .product-card:nth-child(8) { animation-delay: 0.8s; }
+.products-grid .product-card:nth-child(9) { animation-delay: 0.9s; }
+.products-grid .product-card:nth-child(10) { animation-delay: 1s; }
+.products-grid .product-card:nth-child(11) { animation-delay: 1.1s; }
+.products-grid .product-card:nth-child(12) { animation-delay: 1.2s; }
+
+.testimonials-slider .testimonial:nth-child(1) { animation-delay: 0.2s; }
+.testimonials-slider .testimonial:nth-child(2) { animation-delay: 0.4s; }
+.testimonials-slider .testimonial:nth-child(3) { animation-delay: 0.6s; }
+
+.values-grid .value-card:nth-child(1) { animation-delay: 0.1s; }
+.values-grid .value-card:nth-child(2) { animation-delay: 0.2s; }
+.values-grid .value-card:nth-child(3) { animation-delay: 0.3s; }
+.values-grid .value-card:nth-child(4) { animation-delay: 0.4s; }
+
+.team-grid .team-member:nth-child(1) { animation-delay: 0.2s; }
+.team-grid .team-member:nth-child(2) { animation-delay: 0.4s; }
+.team-grid .team-member:nth-child(3) { animation-delay: 0.6s; }
+
+/* Pulse Animation */
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Slide In Animation */
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.8s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Button Hover Effect */
+.btn, .btn-add-cart, .btn-submit, .btn-checkout {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before, .btn-add-cart::before, .btn-submit::before, .btn-checkout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: left 0.7s ease;
+}
+
+.btn:hover::before, .btn-add-cart:hover::before, .btn-submit:hover::before, .btn-checkout:hover::before {
+  left: 100%;
+}
+
+/* Rotate Animation */
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Bounce Animation */
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Shake Animation */
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-5px);
+  }
+  40%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+/* Logo Animation */
+.logo h1 {
+  position: relative;
+  display: inline-block;
+}
+
+.logo h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.logo:hover h1::after {
+  width: 100%;
+}
+
+/* Flip Card Effect */
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Page Transition Animation */
+@keyframes pageLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: pageLoad 0.5s ease-in-out;
+}
+
+/* Hover Underline Animation for Links */
+.nav-links a, .footer-section a {
+  position: relative;
+}
+
+.nav-links a::after, .footer-section ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after, .footer-section ul li a:hover::after, .nav-links a.active::after {
+  width: 100%;
+}

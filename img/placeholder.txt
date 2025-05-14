@@ -1,0 +1,15 @@
+This is a placeholder file for the image directory.
+
+In a real implementation, you would add the following image files to this directory:
+- hero-image.jpg (for the hero section background)
+- beef.jpg, lamb.jpg, chicken.jpg (for featured products)
+- ribeye.jpg, sirloin.jpg, fillet.jpg, brisket.jpg (for beef products)
+- lamb-chops.jpg, leg-of-lamb.jpg (for lamb products)
+- chicken-breast.jpg, whole-chicken.jpg (for chicken products)
+- pork-chops.jpg, pork-belly.jpg (for pork products)
+- biltong.jpg, boerewors.jpg (for specialty products)
+- butchery.jpg (for about page)
+- team1.jpg, team2.jpg, team3.jpg (for team members)
+- map.jpg (for the map placeholder)
+
+For now, you can use placeholder images from services like https://placeholder.com or https://picsum.photos
